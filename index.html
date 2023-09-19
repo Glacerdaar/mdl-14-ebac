@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frida Café</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Frida Café</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-header">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-header">
+                <ul class="nav nav-pills d-block d-md-flex">
+
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-" class="nav-link active">
+                        <i class="bi bi-house-door me-1"></i>
+                        Sobre a cafeteria
+                    </a>
+                    </li>
+                
+                    <li class="nav-item fw-bold">
+                        <a href="#eventos" class="nav-link">
+                        <i class="bi bi-calendar-check me-1"></i>
+                        Promoções
+                    </a>
+                    </li>
+                
+                    <li  class="nav-item fw-bold">
+                        <a href="#cardapio"  class="nav-link">
+                        <i class="bi bi-card-text me-1"></i>
+                        Nosso cardápio
+                    </a>
+                    </li>
+               
+                    <li class="nav-item fw-bold">
+                        <a href="#fale-conosco" class="nav-link">
+                        <i class="bi bi-chat-left-text me-1"></i>
+                        Fale conosco
+                    </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="imagens/cafe-slide-1.jpg" alt="Foto do espaço do restaurante">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="imagens/cafe-slide-2.png" alt="Duas taças de vinho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="imagens/cafe-slide-3.jpg" alt="Uma mesa com comida">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="imagens/interno-cafe.jpg" class="d-block w-100 rounded" alt="Foto do espaço interno da cafeteria">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">a cafeteria</span></h2>
+                            <p>
+                                Na Frida Café, nossa paixão é criar experiências memoráveis através do café. Somos mais do que apenas uma cafeteria; somos um refúgio acolhedor para os amantes do café. Com grãos selecionados e baristas dedicados, servimos uma variedade de cafés incríveis, desde expressos encorpados até cappuccinos cremosos. Nosso espaço convida você a relaxar, trabalhar ou encontrar amigos enquanto desfruta do sabor autêntico do café. Venha nos visitar e descubra o que faz da Frida Café o destino perfeito para uma xícara de café excepcional.
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>
+                                O espaço da Frida Café é um convite à tranquilidade e ao prazer. Com uma decoração aconchegante e iluminação suave, criamos um ambiente acolhedor que convida você a relaxar e desfrutar de momentos especiais. Nossos cantos aconchegantes são perfeitos para leitura, trabalho ou encontros com amigos. Oferecemos Wi-Fi gratuito para sua comodidade. Além disso, nossa equipe calorosa está sempre pronta para atender às suas necessidades. Venha conhecer nosso espaço e faça da Frida afé o seu refúgio preferido.
+    
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Nossas <span class="text-colored">promoções</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="images/eventos/aniversario.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="text-colored fs-4">
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            Segunda maluca
+                        </h3>
+                        <p>
+                            Toda segunda-feira é especial na nossa cafeteria com 20% de desconto em todos os cafés. Desfrute do melhor café, de espresso a cappuccinos, por um preço mais acessível. Comece a semana com sabor e economia, seja sozinho ou com amigos. Venha nos visitar e faça da segunda-feira o seu dia favorito! 
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="images/eventos/casamento.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="text-colored fs-4">
+                            <i class="bi bi-arrow-through-heart-fill"
+                            Aniversários></i>
+                            Amigo do café
+                    </h3>
+                        <p>
+                            Traga um amigo para a Frida Café e ambos receberão 10% de desconto em seus pedidos. Compartilhe o amor pelo café e desfrute de uma xícara deliciosa a um preço especial. Quanto mais amigos você trouxer, mais economizará! Essa promoção é válida todas as quartas-feiras durante todo o dia. Junte-se a nós e espalhe a paixão pelo café.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="images/eventos/confraternizacoes.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="text-colored fs-4">
+                            <i class="bi bi-people-fill"
+                            Aniversários></i>
+                            Cardápio surpresa
+                        </h3>
+                        <p>
+                            Toda sexta-feira, escolhemos um item do nosso cardápio para receber um desconto exclusivo. Descubra qual delícia será a estrela do dia com descontos de 15% a 20%. Quer seja um café gourmet ou um acompanhamento saboroso, você nunca sabe o que esperar. Uma experiência única toda sexta-feira na Café Sereno. Venha experimentar a surpresa do dia!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Nosso <span class="text-colored">cardápio</span>
+                    </h2>
+                </div>
+            <div class="row">
+                <aside class="col-md-2">
+                    <nav class="nav nav-pills flex-column nav-cardapio">
+                        <button data-bs-toggle="tab" data-bs-target="#bebidas-sem-alcool" type="button" class=" fw-bold text-start nav-link active text-colored">
+                            Nossos cafés
+                        </button>
+                    
+                        <button data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas" type="button" class=" fw-bold text-start nav-link text-colored">
+                            Bebidas alcoólicas
+                        </button>
+                
+                        <button data-bs-toggle="tab" data-bs-target="#entradas" type="button" class=" fw-bold text-start nav-link text-colored">
+                            Doces/Salgados
+                        </button>
+                    
+                    </nav>
+                </aside>
+                <div class="col-md-10">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="bebidas-sem-alcool">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="imagens/espresso.png" alt="Café espresso" class="d-block w-100">
+                                    <h5 class="text-colored fw-bold mt-2">Espresso</h5>
+                                    <p> Um café concentrado e encorpado, feito ao pressionar água quente através de grãos finamente moídos. É a base para muitas outras bebidas de café. </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="imagens/capuccino.jpg" alt="Cappuccino" class="d-block w-100">
+                                    <h5 class="text-colored fw-bold mt-2">Cappuccino</h5>
+                                    <p>Uma combinação de espresso, leite vaporizado e espuma de leite. É conhecido pelo equilíbrio entre o sabor forte do café e a suavidade do leite.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="imagens/latte.jpg" alt="Coca-cola" class="d-block w-100">
+                                    <h5 class="text-colored fw-bold mt-2">Latte</h5>
+                                    <p>Feito com espresso e uma grande quantidade de leite vaporizado, resultando em uma bebida suave e cremosa. Pode ser aromatizado com xaropes de sabores, como baunilha ou caramelo. </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="imagens/Macchiato.jpg" alt="Coca-cola" class="d-block w-100">
+                                    <h5 class="text-colored fw-bold mt-2">Macchiato</h5>
+                                    <p>Um espresso "manchado" com uma pequena quantidade de leite vaporizado ou espuma de leite. É uma opção mais forte para quem gosta de café. </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="imagens/Mocha.png" alt="Coca-cola" class="d-block w-100">
+                                    <h5 class="text-colored fw-bold mt-2">Mocha</h5>
+                                    <p> Uma combinação de espresso, leite vaporizado, chocolate em pó e chantilly. É uma escolha decadente para os amantes de café e chocolate. </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="imagens/Café Americano.jpg" alt="Coca-cola" class="d-block w-100">
+                                    <h5 class="text-colored fw-bold mt-2">Café Americano</h5>
+                                    <p>Feito diluindo espresso com água quente, resultando em uma bebida mais suave e menos concentrada. É uma excelente opção para quem prefere um café mais leve.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="bebidas-alcoolicas">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="imagens/cerveja.jpg" alt="Cerveja" class="d-block w-100">
+                                    <h5 class="text-colored fw-bold mt-2">Cerveja</h5>
+                                    <p>Na Frida Café, oferecemos uma seleção de cervejas artesanais, incluindo IPAs, stouts, sour ales e lagers. Essas cervejas cuidadosamente escolhidas são uma opção para os amantes de cerveja que desejam explorar sabores únicos. Nossa equipe está pronta para orientá-lo na escolha da cerveja ideal para seu paladar, e nosso espaço acolhedor convida você a relaxar e desfrutar dessa fusão de café e cerveja. Venha descobrir novos horizontes de sabor na Frida Café! </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="imagens/vinho.jpg" alt="Vinho" class="d-block w-100">
+                                    <h5 class="text-colored fw-bold mt-2">Vinho</h5>
+                                    <p>Na Frida Café, nossa seleção de vinhos inclui tintos, brancos, rosés e espumantes, provenientes de vinícolas locais e regionais. Essas opções oferecem uma variedade de sabores e características para todos os gostos. Nossa equipe está à disposição para ajudá-lo a escolher o vinho perfeito para sua refeição ou preferências pessoais. Desfrute de sua taça de vinho em nosso ambiente acolhedor e descubra novos aromas e sabores na Frida Café.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="entradas">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img src="imagens/Croissant.jpg" alt="Cerveja" class="d-block w-100">
+                                    <h5 class="text-colored fw-bold mt-2">Croissant</h5>
+                                    <p>Um croissant recém-assado é uma escolha clássica para acompanhar qualquer tipo de café. Sua textura amanteigada combina perfeitamente com um café espresso, cappuccino ou latte.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="imagens/Biscoitos de Chocolate.jpg" alt="Cerveja" class="d-block w-100">
+                                    <h5 class="text-colored fw-bold mt-2">Biscoitos de Chocolate</h5>
+                                    <p>Para os amantes de sobremesas, biscoitos de chocolate são ideais para mergulhar em um café mocha. A combinação de sabores de café e chocolate é irresistível.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="imagens/Amêndoas-ou-Nozes.jpg" alt="Cerveja" class="d-block w-100">
+                                    <h5 class="text-colored fw-bold mt-2">Amêndoas ou Nozes</h5>
+                                    <p>Para um toque saudável, amêndoas ou nozes são um ótimo petisco para acompanhar um espresso ou macchiato. O contraste entre o sabor do café e o crocante das nozes é delicioso.</p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="imagens/Sanduíche de Presunto e Queijo.jpg" alt="Cerveja" class="d-block w-100">
+                                    <h5 class="text-colored fw-bold mt-2">Sanduíche de Presunto e Queijo</h5>
+                                    <p>Se você preferir uma opção salgada, um sanduíche de presunto e queijo combina bem com um café americano. A combinação de sabores salgados e o café suave é uma escolha satisfatória para um lanche. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                </div>
+            <div class="row">
+                <div class="col-md-7 mb-5">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                            <input type="email" id="name" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opicional)</label>
+                            <input type="tel" id="name" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                            <textarea  id="mensagem" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn fw-bold">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <h3 class="section-title fs-4 text-colored">
+                            <i class="bi bi-hand-thumbs-up-fill"></i>
+                            Redes sociais</h3>
+                        <ul class="social-links">
+                            <li class="fs-5">
+                                <a href="#">
+                                    <i class="bi bi-facebook text-colored"></i>
+                                </a>
+                            </li>
+                            <li class="fs-5 ms-1 me-1">
+                                <a href="#">
+                                    <i class="bi bi-instagram text-colored"></i>
+                                </a>
+                            </li>
+                            <li class="fs-5">
+                                <a href="#">
+                                    <i class="bi bi-whatsapp text-colored"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row mt-4">
+                        <h3 class="section-title fs-4 text-colored">
+                            <i class="bi bi-cursor-fill"></i>
+                            Endereço
+                        </h3>
+                        <p>Rua teste Exemplo n45, Bairro Bootstrap - Sao Paulo - Sp</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
